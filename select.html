@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <main>
+            
+<!--Forma 1--Se recomienda cuando hay pocas opciones>
+    
+        <select name="cursos" id="">
+            <option value="JavaScript">JavaScript</option> 
+            <option value="HTML5">HTML5</option>
+            <option value="CSS3">CSS3</option>
+            <option value="Web Standars">Web Standars</option>           
+        </select> -->
+
+<!--Forma 2. Se usa cuando hay muchas opciones. Con esta forma no requiere hacer scroll. El usuario digita la opción que desea.-->
+
+        <input list="cursos">
+        <datalist id="cursos">
+            <option value="JavaScript">JavaScript</option>
+            <option value="CSS3">CSS3</option>
+            <option value="HTML5">HTML5</option>
+            <option value="Web Standars">Web Standars</option>   
+        </datalist>
+        
+    </main>    
+</body>
+</html>
